@@ -7,4 +7,4 @@ env = { }
 crons = [ ]
 
 [build]
-command = ""
+command = "npx esbuild src/index.ts --bundle --outfile=dist/worker.js --format=esm --platform=neutral"
